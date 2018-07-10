@@ -13,7 +13,6 @@ X = [[181, 80, 44], [177, 70, 43], [160, 60, 38], [154, 54, 37],
 Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
      'female', 'male', 'male']
 
-
 #Classifiers
 classifier_tree = tree.DecisionTreeClassifier() # Using the decission tree classifer to classify our data(female or male) 
 classifier_svm  = svm.SVC() # Support vector machine classifier
@@ -49,3 +48,5 @@ print("Support Vector Machines : Gender = ", prediction_svm)
 print("Stochastic gradient descent : Gender = ", prediction_sgd)
 print("Multi-Layer Perceptron : Gender = ", prediction_mlp)
 print("Nearest Neighbor : Gender = ", prediction_nn)
+
+#Based on the provied few sample data, Nearest neighbour algorithm was the most successful candidate. Decision tree, the runners up.
